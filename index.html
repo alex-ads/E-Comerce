@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minha Loja</title>
+    <!-- Link para o Bootstrap CSS (você pode adicionar sua própria linkagem CSS depois) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para o seu próprio arquivo CSS, se necessário -->
+    <!-- <link rel="stylesheet" href="caminho_para_seu_arquivo_css.css"> -->
+    <style>
+        /* Adicione estilos personalizados aqui, se necessário */
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Minha Loja</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+            <!-- Formulário de pesquisa -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Corpo da página -->
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo à Minha Loja!</h1>
+            <p class="lead">Aqui você encontra os melhores produtos pelos melhores preços.</p>
+            <hr class="my-4">
+            <p>Explore nossa variedade de produtos e aproveite as ofertas especiais.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Ver Produtos</a>
+        </div>
+
+        <!-- Destaques -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto em Destaque</h5>
+                        <p class="card-text">Descrição do produto em destaque. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Outro Produto</h5>
+                        <p class="card-text">Descrição do outro produto. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais um Produto</h5>
+                        <p class="card-text">Descrição do mais um produto. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categorias de Produtos -->
+        <h2 class="mb-4">Categorias</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Categoria 1</h5>
+                        <p class="card-text">Descrição da categoria 1. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Categoria 2</h5>
+                        <p class="card-text">Descrição da categoria 2. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Categoria 3</h5>
+                        <p class="card-text">Descrição da categoria 3. Adicione informações relevantes aqui.</p>
+                        <a href="#" class="btn btn-primary">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Depoimentos de Clientes -->
+        <h2 class="mt-4 mb-4">Depoimentos de Clientes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget
+                            vestibulum justo, nec dignissim risus. Proin efficitur eros et ante malesuada hendrerit."
+                        </p>
+                        <p class="text-right font-weight-bold">- Cliente 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget
+                            vestibulum justo, nec dignissim risus. Proin efficitur eros et ante malesuada hendrerit."
+                        </p>
+                        <p class="text-right font-weight-bold">- Cliente 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget
+                            vestibulum justo, nec dignissim risus. Proin efficitur eros et ante malesuada hendrerit."
+                        </p>
+                        <p class="text-right font-weight-bold">- Cliente 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre a Empresa -->
+        <h2 class="mt-4 mb-4">Sobre a Empresa</h2>
+        <p>Descrição breve sobre a empresa e seus valores. Adicione informações relevantes aqui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec ex nec turpis aliquet venenatis. Quisque id
+            orci auctor, dapibus nibh eu, vehicula tellus. Nulla sit amet justo quis elit congue vestibulum. Donec
+            elementum justo ut commodo lacinia. Aliquam quis vestibulum purus.</p>
+        <p>Integer fermentum dolor id elit fermentum fermentum. Phasellus congue nulla vel sem rhoncus tristique. Nulla
+            facilisi. Phasellus vulputate lacus eget velit elementum, id ultricies purus varius.</p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3">
+            © 2024 Minha Loja
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap (você pode adicionar os seus próprios scripts JavaScript depois) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
