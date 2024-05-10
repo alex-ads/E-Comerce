@@ -4,69 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja</title>
+    <title>Digital Shopping</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style/css/style.css">
-
 </head>
 
 <body>
     <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Luís Vitonr</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Digital Shopping</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
             <!-- Formulário de pesquisa -->
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Terno Preto Simples" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Icon
-                </button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
 
     <!-- Corpo da página -->
     <div class="container mt-4">
-        <div class="jumbotron">
-            <h1 class="display-4">Bem-vindo à Minha Loja!</h1>
-            <p class="lead">Aqui você encontra os melhores produtos pelos melhores preços.</p>
+        <div class="jumbotron" style="background-image: url('./assets/style/img/papeldeparede.jpg');">
+            <h1 class="display-4">Bem-vindo à Digital Shopping!</h1>
+            <p class="lead">Descubra a excelência em compras online.</p>
             <hr class="my-4">
-            <p>Explore nossa variedade de produtos e aproveite as ofertas especiais.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Ver Produtos</a>
+            <p>Explore nossa seleção exclusiva de produtos e mergulhe no luxo da conveniência.</p>
         </div>
 
+
         <!-- Destaques -->
+        <h2 class="mb-4">Destaques</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Produto em Destaque</h5>
-                        <p class="card-text">Descrição do produto em destaque. Adicione informações relevantes aqui.</p>
+                <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/style/img/iphone.jpg" class="card-img-top" alt="iPhone 15 Pro Max">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">iPhone 15 Pro Max</h5>
+                        <p class="card-text">A última inovação em tecnologia móvel. Com uma câmera revolucionária,
+                            design elegante e desempenho incomparável.</p>
                         <a href="#" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Outro Produto</h5>
-                        <p class="card-text">Descrição do outro produto. Adicione informações relevantes aqui.</p>
+                <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/style/img/prada.jpg" class="card-img-top" alt="Bolsa Prada">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bolsa Prada</h5>
+                        <p class="card-text">Elegância e estilo se encontram nesta bolsa da Prada. Feita com os melhores
+                            materiais e detalhes impecáveis.</p>
                         <a href="#" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mais um Produto</h5>
-                        <p class="card-text">Descrição do mais um produto. Adicione informações relevantes aqui.</p>
+                <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/style/img/gym.jpg" class="card-img-top" alt="Halters de Academia">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Halters de Academia</h5>
+                        <p class="card-text">Prepare-se para o seu treino com esses halters de academia. Feitos para
+                            durar e ajudar você a alcançar seus objetivos de fitness.</p>
                         <a href="#" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
@@ -75,34 +91,87 @@
 
         <!-- Categorias de Produtos -->
         <h2 class="mb-4">Categorias</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Categoria 1</h5>
-                        <p class="card-text">Descrição da categoria 1. Adicione informações relevantes aqui.</p>
-                        <a href="#" class="btn btn-primary">Ver Produtos</a>
+        <div id="carouselCategories" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/eletronicos.jpg" class="card-img-top" alt="Eletrônicos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Eletrônicos</h5>
+                                    <p class="card-text">Encontre os melhores dispositivos eletrônicos.</p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/moda.jpg" class="card-img-top" alt="Moda">
+                                <div class="card-body">
+                                    <h5 class="card-title">Moda</h5>
+                                    <p class="card-text">Descubra as últimas tendências da moda.</p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/decoração.jpg" class="card-img-top" alt="Decoração">
+                                <div class="card-body">
+                                    <h5 class="card-title">Decoração</h5>
+                                    <p class="card-text">Transforme sua casa com estilo e elegância.</p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/esportes.jpg" class="card-img-top" alt="Esportes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Esportes</h5>
+                                    <p class="card-text">Equipamentos e acessórios para atletas de todos os níveis.</p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/livros.jpg" class="card-img-top" alt="Livros">
+                                <div class="card-body">
+                                    <h5 class="card-title">Livros</h5>
+                                    <p class="card-text">Explore mundos através das páginas de grandes obras literárias.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/style/img/bebidas.jpg" class="card-img-top" alt="Bebidas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bebidas</h5>
+                                    <p class="card-text">Descubra novos sabores e experiências com nossas bebidas
+                                        selecionadas.</p>
+                                    <a href="#" class="btn btn-primary">Ver Produtos</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Categoria 2</h5>
-                        <p class="card-text">Descrição da categoria 2. Adicione informações relevantes aqui.</p>
-                        <a href="#" class="btn btn-primary">Ver Produtos</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Categoria 3</h5>
-                        <p class="card-text">Descrição da categoria 3. Adicione informações relevantes aqui.</p>
-                        <a href="#" class="btn btn-primary">Ver Produtos</a>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselCategories" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCategories" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
         <!-- Depoimentos de Clientes -->
@@ -141,25 +210,26 @@
         </div>
 
         <!-- Sobre a Empresa -->
-        <h2 class="mt-4 mb-4">Sobre a Empresa</h2>
-        <p>Descrição breve sobre a empresa e seus valores. Adicione informações relevantes aqui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec ex nec turpis aliquet venenatis. Quisque id
-            orci auctor, dapibus nibh eu, vehicula tellus. Nulla sit amet justo quis elit congue vestibulum. Donec
-            elementum justo ut commodo lacinia. Aliquam quis vestibulum purus.</p>
-        <p>Integer fermentum dolor id elit fermentum fermentum. Phasellus congue nulla vel sem rhoncus tristique. Nulla
-            facilisi. Phasellus vulputate lacus eget velit elementum, id ultricies purus varius.</p>
-    </div>
-
-    <!-- Rodapé -->
-    <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="text-center p-3">
-            © 2024 Minha Loja
+        <div>
+            <h2 class="mt-4 mb-4">Sobre a Nossa Empresa</h2>
+            <p>Somos uma loja online apaixonada por oferecer a melhor experiência de compra e produtos de alta
+                qualidade. No nosso e-commerce, buscamos sempre proporcionar um atendimento excepcional e uma ampla
+                variedade de
+                produtos para atender às suas necessidades.Seja para encontrar itens de moda atualizados, eletrônicos de
+                ponta ou produtos essenciais para o lar,
+                estamos aqui para ajudar você a encontrar o que procura.</p>
         </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Rodapé -->
+        <footer class="bg-light text-center text-lg-start mt-4">
+            <div class="text-center p-3">
+                © 2024 Digital Shopping
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
